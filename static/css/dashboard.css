@@ -1,0 +1,137 @@
+/* Custom styles for ICAHT Dashboard */
+.upload-area {
+    border: 3px dashed #dee2e6;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background: #f8f9fa;
+}
+
+.upload-area:hover {
+    border-color: #0d6efd;
+    background: #e7f3ff;
+}
+
+.upload-area.dragover {
+    border-color: #198754;
+    background: #d1e7dd;
+}
+
+.upload-icon {
+    font-size: 3rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.requirements-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.requirements-card h6 {
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+.requirements-card ul li {
+    padding: 0.25rem 0;
+}
+
+.file-info .badge {
+    font-size: 0.875rem;
+}
+
+.summary-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: 300px;
+}
+
+.summary-card h6 {
+    color: #495057;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Grade color coding */
+.grade-0 {
+    background-color: #d4f4dd !important;
+}
+
+.grade-1 {
+    background-color: #fff2cc !important;
+}
+
+.grade-2 {
+    background-color: #ffe699 !important;
+}
+
+.grade-3 {
+    background-color: #ffcc99 !important;
+}
+
+.grade-4 {
+    background-color: #ffb3b3 !important;
+}
+
+/* Table styling */
+#resultsTable th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#resultsTable tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .upload-area {
+        padding: 20px;
+    }
+    
+    .upload-icon {
+        font-size: 2rem;
+    }
+    
+    .summary-card {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Loading animations */
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Alert styling */
+.alert-custom {
+    border-left: 4px solid;
+    border-radius: 0;
+}
+
+.alert-custom.alert-info {
+    border-left-color: #0dcaf0;
+}
+
+.alert-custom.alert-success {
+    border-left-color: #198754;
+}
+
+.alert-custom.alert-warning {
+    border-left-color: #ffc107;
+}
+
+.alert-custom.alert-danger {
+    border-left-color: #dc3545;
+}
