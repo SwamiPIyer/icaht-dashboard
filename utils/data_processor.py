@@ -164,7 +164,6 @@ class DataProcessor:
             
             interpolated_data.append(patient_data)
         
-        return pd.concat(interpolated_data, ignore_index=True)import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 from scipy import interpolate
